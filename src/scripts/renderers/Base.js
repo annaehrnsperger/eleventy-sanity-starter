@@ -30,7 +30,19 @@ export class Base extends Highway.Renderer {
     }, 100);
   }
 
+  onEnterCompleted() {
+    setTimeout(() => {
+      // ScrollTrigger.refresh();
+
+      window.dispatchEvent(new CustomEvent('entercomplete'));
+    }, 100);
+  }
+
   onLeaveCompleted() {
-    window.dispatchEvent(new CustomEvent('leavecomplete'));
+    setTimeout(() => {
+      // ScrollTrigger.getAll().forEach((st) => st.kill());
+
+      window.dispatchEvent(new CustomEvent('leavecomplete'));
+    }, 100);
   }
 }

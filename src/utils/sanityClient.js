@@ -1,3 +1,4 @@
+require('dotenv').config();
 const client = require('@sanity/client');
 
 module.exports = client({

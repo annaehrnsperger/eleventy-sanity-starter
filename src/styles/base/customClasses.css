@@ -51,6 +51,7 @@
 }
 
 .link::after {
+  pointer-events: none;
   content: '';
   position: absolute;
   left: 0;
@@ -72,4 +73,7 @@
   width: 100%;
   height: 30%;
   background: var(--black);
+}
+
+@media (min-width: 900px) {
 }
