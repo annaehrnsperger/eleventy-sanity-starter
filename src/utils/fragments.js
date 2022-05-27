@@ -1,10 +1,7 @@
 const link = `
-  button{
-    '_type': page->_type,
-    'page': page->slug.current,
-    url,
-    text,
-    type
+  link{
+    ...,
+    'page': page->slug.current
   },
 `;
 

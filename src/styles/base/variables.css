@@ -1,8 +1,8 @@
 :root {
   --text: var(--black);
   --bg: var(--white);
-  --black: #131313;
-  --white: #ffffff;
+  --black: #000;
+  --white: #fff;
   --gray: rgba(238, 238, 238, 0.3);
 
   --xs: clamp(1.2rem, 2vw, 1.6rem);
@@ -23,5 +23,10 @@
     --xl: 3.4rem;
     --2xl: 3.6rem;
     --3xl: 3.8rem;
+  }
+
+  @media (min-width: 900px) {
+    :root {
+    }
   }
 }

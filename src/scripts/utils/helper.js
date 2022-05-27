@@ -45,5 +45,10 @@ export function randomNum(min, max, dec = false) {
 
 export function keys() {
   const escape = 27;
-  return { escape };
+  const left = 37;
+  const up = 38;
+  const right = 39;
+  const down = 40;
+
+  return { escape, left, up, right, down };
 }

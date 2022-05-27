@@ -1,5 +1,5 @@
-<button class="fixed w-10 h-10 top-8 p-8 right-0 z-10 md:hidden" data-menu-btn aria-label="Menu Button">
-  <div class="absolute bg-secondary h-px w-10 left-0 top-0 origin-center" data-menu-line></div>
-  <div class="absolute bg-secondary h-px w-10 left-0 top-3 origin-center" data-menu-line></div>
-  <div class="absolute bg-secondary h-px w-10 left-0 top-6 origin-center" data-menu-line></div>
+<button class="relative w-16 h-[40px] flex flex-col justify-center items-end md:hidden" data-menu-btn aria-label="Menu Button">
+  {% for i in range(0, 3) %}
+    <span class="bg-black h-px w-8 origin-center {{ "-translate-y-[5px]" if loop.first }} {{ "translate-y-[5px]" if loop.last }}" data-menu-line></span>
+  {% endfor %}
 </button>

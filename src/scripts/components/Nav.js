@@ -79,16 +79,15 @@ export class Nav {
     const duration = 0.4;
 
     if (this.state.isNavOpen) {
-      gsap.to([first, last], { top: '0.75rem', ease, duration });
-      gsap.to(last, { rotate: -45, ease, duration });
-      gsap.to(first, { rotate: 45, ease, duration });
+      gsap.to(last, { rotate: -45, y: -2, ease, duration });
+      gsap.to(first, { rotate: 45, y: 2, ease, duration });
       gsap.to(middle, { autoAlpha: 0, ease, duration });
     }
 
     if (!this.state.isNavOpen) {
       gsap.to([first, last], { rotate: 0, ease, duration });
-      gsap.to(first, { top: 0, ease, duration });
-      gsap.to(last, { top: '1.5rem', ease, duration });
+      gsap.to(first, { y: -5, ease, duration });
+      gsap.to(last, { y: 5, ease, duration });
       gsap.to(middle, { autoAlpha: 1, ease, duration });
     }
   }
